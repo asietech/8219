@@ -882,7 +882,7 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2c52e555-5114-44f8-b17b-14c8d05580fb"
             name="User" abstractType="#9eae6001-1f13-441d-a0b8-a918782ae7ab"/>
         <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-            id="343ba63d-312c-410b-8fd6-30efee5579d1" name="[Power] 100~240VAC wide range/???A"
+            id="343ba63d-312c-410b-8fd6-30efee5579d1" name="[Power] 100~240VAC wide range/10A "
             summary="Data must be Cat6E (shielding)" linkEnds="#743bfd50-0b2b-4c59-97c2-6b66453a5e52 #0a797f94-9043-472c-9642-09f82a0b6833"/>
         <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
             id="05f1493a-e465-4b58-8ad3-d91644a97cc3" name="[Data] ????Protocol" linkEnds="#424928b6-490a-4902-90db-1bb9ff2dd8da #3160fe26-a3f2-4be9-b262-468c6366c9ea"/>
@@ -895,7 +895,7 @@
               id="d2f2c42e-7424-4a5b-9778-ac0b1aa30a3a" name="feedback" source="#fa635ad9-b116-4196-8c66-7e014b9ebb60"
               target="#4387a723-6828-47af-a795-b065700f6cdf" kind="FLOW"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6b28a7ce-da5f-4a95-8a57-8fa06f680ed9"
-              name="Tripod" abstractType="#76abbe7e-72fa-4df2-9816-2ca9d4fe7647"/>
+              name="Tripod Pedestal System" abstractType="#76abbe7e-72fa-4df2-9816-2ca9d4fe7647"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f42795b7-aef9-436b-8620-56de1f26e6ed"
               name="EL Gear Ratio" abstractType="#7f2754be-5f52-491d-ac99-6e5207252ec4"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2c1e2aae-be29-4c30-a642-4670a6d3b327"
@@ -932,7 +932,8 @@
               id="bb81e20c-7984-4105-8f85-bbe6a989c621" targetElement="#0d607b2a-d126-4347-917c-6f84fd963061"
               sourceElement="#95fd4c97-29f2-457c-ad8f-081fd800915f"/>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="76abbe7e-72fa-4df2-9816-2ca9d4fe7647" name="Tripod" nature="NODE">
+              id="76abbe7e-72fa-4df2-9816-2ca9d4fe7647" name="Tripod Pedestal System"
+              nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c15bdba8-c3e2-4584-a021-f40059f9087d"
                 name="Motor System Mounting" abstractType="#b4ea417f-d92d-402c-b38c-d5056c44dfee"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="88c6fd3d-aaa3-4d1c-b681-7c5f2828763d"
@@ -942,7 +943,7 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="163258da-7eb1-40b3-b1b3-74e4a0445533"
                 name="GPS Antenna" abstractType="#5ad5baf3-42f8-41af-b7a8-ec8f7c3f9ae5"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b2893b6f-d663-4ea6-b67d-422ffd6e48fd"
-                name="PSU Box" abstractType="#5a966ad5-962b-4720-8f68-29c442fb3e48"/>
+                name="PSU (Power Supply Unit - Isolator Electrical Box)" abstractType="#5a966ad5-962b-4720-8f68-29c442fb3e48"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="14cb610c-d362-4a8a-a154-4cbe05d3f6e6"
                 name="Bubble Meter" abstractType="#4db37697-ffdd-405e-bbef-f9db95b6db0c"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="cdeb71eb-0a70-4e86-80e2-a9246984681d"
@@ -956,11 +957,13 @@
                 id="b7ca3018-00ff-4773-aeb1-8672d1c34114" name="Mechanical Coupling"
                 summary="" linkEnds="#5d809bc2-b598-4bac-92f5-c744071f13ec #8f5bd21d-0565-4b90-a8be-8d15c86fc182"/>
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-                id="f143a113-777d-44d8-a0f2-1154f6c51a94" name="UART*4P" linkEnds="#34092ab1-d6b4-4001-b7ae-26015c8d350b #ce8770d7-d46d-40aa-b3d3-a05493d8cc7e"/>
+                id="f143a113-777d-44d8-a0f2-1154f6c51a94" name="[UART] 5V/200mA*4P (SMMP Protocol???)"
+                summary="to have RSSI data into UI" linkEnds="#34092ab1-d6b4-4001-b7ae-26015c8d350b #ce8770d7-d46d-40aa-b3d3-a05493d8cc7e"/>
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-                id="7df25221-f44b-46a0-aefd-f997b3bd7e3e" name="110VAC/10A*3P" linkEnds="#33d9835e-8bce-4301-b77f-9a72cedfc62b #5c2f62cf-4f89-48e5-a820-23429b7d91cf"/>
+                id="7df25221-f44b-46a0-aefd-f997b3bd7e3e" name="110VAC/10A*3P [600W]"
+                linkEnds="#33d9835e-8bce-4301-b77f-9a72cedfc62b #5c2f62cf-4f89-48e5-a820-23429b7d91cf"/>
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-                id="1719e048-87b0-4228-bb77-da66f2e62014" name="24V/10A*???P" linkEnds="#c1344ac8-d970-42d2-9463-ad18a00956b0 #12ebce1a-2b71-4da5-835a-7f75a851e344"/>
+                id="1719e048-87b0-4228-bb77-da66f2e62014" name="24V/15A*2P" linkEnds="#c1344ac8-d970-42d2-9463-ad18a00956b0 #12ebce1a-2b71-4da5-835a-7f75a851e344"/>
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                 id="6a99a138-b160-427b-8598-204a8f4c81d8" name="N-trpe [M-to-M]" linkEnds="#c3e299f7-d62b-477b-89bc-5193a9c41aff #63bea0b2-d4f3-4422-b5f2-d72ada33d1de"/>
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
@@ -968,7 +971,7 @@
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                 id="8984a356-7b0e-413f-b8a1-890f3783306b" name="Cat5E [RJ45]" linkEnds="#2076394d-7e52-472a-bb62-350ece409748 #b8762dcc-61fa-45b9-af9f-a22e15612af9"/>
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-                id="14b5f1ba-f047-4314-a0fe-9f22da56b14b" name="????" linkEnds="#1f8e7151-bad2-4f7c-9bda-9eefd64dd943 #1d786f61-570e-4bd1-b3a8-ece325610deb"/>
+                id="14b5f1ba-f047-4314-a0fe-9f22da56b14b" name="5V/200mA*6P" linkEnds="#1f8e7151-bad2-4f7c-9bda-9eefd64dd943 #3ed5575c-9625-4b9e-b539-ed50655e30a9"/>
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                 id="8516989d-9363-463c-9774-e722cea1457c" name="Mounted [above AZ axis]"
                 summary=" does not move together with EL-axis" linkEnds="#62b3ba74-aa2b-4af8-a778-f6492309eb7a #18cc194e-8696-4723-b624-900bdce93a2b"/>
@@ -1174,6 +1177,8 @@
                     name="IP66 Power [24VDC] 8P" abstractType="#aca1aa43-b036-41d4-87fb-12ac90eadd5f"/>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="62b3ba74-aa2b-4af8-a778-f6492309eb7a" name="PP 10"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="204ca20c-322d-4154-b75c-9a9ac7569f3c"
+                    name="IP66 IMU" abstractType="#808336c9-f73e-4096-92cf-268798e43b60"/>
                 <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                     id="28da9e01-3287-46f9-8ed0-0fe320ab6a8e" name="SPI " linkEnds="#aabee477-5ed8-4f92-9274-5c3427affd16 #fe20fba0-dd99-4156-8c82-b681975fafe3"/>
                 <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
@@ -1203,6 +1208,8 @@
                 <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                     id="636377c8-9b73-41b1-89cc-0278049eb555" name="LS ???V/???A*3P"
                     linkEnds="#3847539f-2566-478c-8420-3a2d04e637f7 #f471fed2-6c86-4221-b12a-9978a91e4f30"/>
+                <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                    id="e2460023-d32c-4093-a10e-2b61f32f254d" name="5V/200mA*6P" linkEnds="#1d786f61-570e-4bd1-b3a8-ece325610deb #9aca6779-a06c-48a7-9aff-71559e4d9c88"/>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                     id="8da99540-0386-4bdf-bac8-6d456b5d1be1" name="AZ Motor Driver"
                     nature="NODE">
@@ -1311,6 +1318,13 @@
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                       id="7c99244a-2ea7-4829-8771-c97613a6c985" name="PP 4"/>
                 </ownedPhysicalComponents>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="808336c9-f73e-4096-92cf-268798e43b60" name="IP66 IMU" nature="NODE">
+                  <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                      id="3ed5575c-9625-4b9e-b539-ed50655e30a9" name="PP 1"/>
+                  <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                      id="9aca6779-a06c-48a7-9aff-71559e4d9c88" name="PP 2"/>
+                </ownedPhysicalComponents>
               </ownedPhysicalComponents>
             </ownedPhysicalComponents>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
@@ -1318,7 +1332,7 @@
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                   id="8f5bd21d-0565-4b90-a8be-8d15c86fc182" name="PP 1"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="11e6b23c-8c21-43ea-837e-3f3d9969a01f"
-                  name="IMU?????" abstractType="#906438a2-5817-481a-8790-af48ecd0ab9f"/>
+                  name="IMU MPU9050" abstractType="#906438a2-5817-481a-8790-af48ecd0ab9f"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                   id="63bea0b2-d4f3-4422-b5f2-d72ada33d1de" name="PP 4"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="375dfe97-86f5-4015-a5ab-12142a18fc81"
@@ -1339,7 +1353,7 @@
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                   id="c25d1703-d554-407a-bbc8-3fa761ddca8f" name="PL 4" linkEnds="#b2bbe3af-0ca8-4591-b9f7-ff4578d93dbb #2b49bc75-9500-4e1a-b174-3de829007dc0"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="906438a2-5817-481a-8790-af48ecd0ab9f" name="IMU?????" nature="NODE">
+                  id="906438a2-5817-481a-8790-af48ecd0ab9f" name="IMU MPU9050" nature="NODE">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="1f8e7151-bad2-4f7c-9bda-9eefd64dd943" name="PP 1"/>
               </ownedPhysicalComponents>
@@ -1558,21 +1572,22 @@
                   id="8290a236-51f6-48c8-a46a-ca1a6edaf85a" name="PP 1"/>
             </ownedPhysicalComponents>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="5a966ad5-962b-4720-8f68-29c442fb3e48" name="PSU Box" nature="NODE">
+                id="5a966ad5-962b-4720-8f68-29c442fb3e48" name="PSU (Power Supply Unit - Isolator Electrical Box)"
+                nature="NODE">
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                   id="c1344ac8-d970-42d2-9463-ad18a00956b0" name=""/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fd57055b-7104-432b-8141-331e76bfe16d"
-                  name="AC/DC [100~240VAC ->24VDC]" abstractType="#36dc1b0c-7839-4062-a71f-42cd1aefc0aa"/>
+                  name="AC/DC [100~240VAC ->24VDC] 400W" abstractType="#36dc1b0c-7839-4062-a71f-42cd1aefc0aa"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3a08a238-2d82-460b-8e93-05077fb9abc6"
                   name="IP66 [Power Motor+ACU] Out" abstractType="#b2618d88-7d9f-42d7-ba67-057438798bf7"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3a29212a-3bc9-4661-9b79-3746c9a3fb65"
                   name="IP66 [Data] In" abstractType="#0a790b8c-15c1-49ff-88fd-70d8cf096a10"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="43511a41-878f-4042-9a2a-b4f633a50559"
-                  name="Safety Breakers??" abstractType="#c954c6a6-d38a-44ae-965d-673fb5584ba8"/>
+                  name="Fuse Socket" abstractType="#c954c6a6-d38a-44ae-965d-673fb5584ba8"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f9282196-7409-4cfc-a1a1-0e7c6b09c38c"
-                  name="ON/OFF LED???" abstractType="#62d63b02-b1cf-4270-97e6-1a033bcb9fdb"/>
+                  name="ON/OFF LED" abstractType="#62d63b02-b1cf-4270-97e6-1a033bcb9fdb"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="60158ca0-6c2d-4439-b36f-dbb6807983cb"
-                  name="Emergency Stop???" abstractType="#be14c9d5-e3f6-447c-a31f-d2de9019cca3"/>
+                  name="[ACU + ETH Hub]Emergency Stop" abstractType="#be14c9d5-e3f6-447c-a31f-d2de9019cca3"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5ab9c410-101a-407f-961f-5a00c8ee7522"
                   name="Bridge 24VDC" abstractType="#b560f819-5ead-4c8c-98e6-44f52cda6d79"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="92bdc2aa-076e-4dc5-bd87-f0cf85c54e5b"
@@ -1585,18 +1600,10 @@
                   name="IP66 [Power] In" abstractType="#399286f5-601a-4de8-8d90-e02feb1e32d3"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c19f238b-09df-4ed9-9e51-2ebc35a42f5c"
                   name="IP66 [Data WirelessModule] Out" abstractType="#4e679765-83e7-43fa-9b7a-bb6926c9ebd2"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="860462dd-f216-453c-aa37-923a69112adc"
-                  name="WirelessModule ON/OFF??" abstractType="#6b3c5f25-c844-4db4-a35b-836b27248777"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="57579797-bd20-4b43-8e34-61a14e8f70b0"
-                  name="ACU ON/OFF??" abstractType="#58ba1516-7bb1-43a4-9701-07d82e3a3dab"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="59bca4ac-5218-4015-bb79-43c16c23226c"
-                  name="DC Switch???" abstractType="#c4335195-ce70-45bc-96eb-bc9174292faf"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="41769540-e23b-4037-877c-5dbd71923a0c"
-                  name="AC WirelessModule Switch??" abstractType="#675bfaf1-deeb-4a96-acb0-6d71f4d15682"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="baf9fc1d-d0d4-44e6-96dd-6ff7db5ed4a2"
-                  name="ACU Switch??" abstractType="#273ff0df-8755-41c7-9819-c389f61197d8"/>
+                  name="DC Switch" abstractType="#c4335195-ce70-45bc-96eb-bc9174292faf"/>
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-                  id="52bc6d64-674e-4e35-a8c9-1bbdf5413063" name="24V/10A*???P" linkEnds="#f375759e-7e84-4e3f-8573-192a3515e102 #ac8570e7-6989-4926-b508-4b83acfcccad"/>
+                  id="52bc6d64-674e-4e35-a8c9-1bbdf5413063" name="24V/10A*2P" linkEnds="#f375759e-7e84-4e3f-8573-192a3515e102 #0ca64504-7468-4852-a2c9-610c15194c7a"/>
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                   id="06ca2d8b-4db1-4e7a-bcc9-7c7160d36b34" name="PL 2" linkEnds="#cdcc51c3-6070-48f2-ad93-0f0c74e96b17 #c1344ac8-d970-42d2-9463-ad18a00956b0"/>
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
@@ -1608,7 +1615,7 @@
                   id="370d87c4-f27a-4db0-861b-9f88b6e1521d" name="PL 5" linkEnds="#bd4dfda3-6477-434d-aafe-405d797ab8a6 #87d5f7c0-09bd-4dab-b1d9-9941cdc704da"/>
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                   id="16ac29ff-5d82-4801-9585-d5cc91f2a8a3" name="100~240VAC/10A*3P"
-                  linkEnds="#04e60a36-fccf-4324-94d2-cd0d17cacf3d #a4677426-567d-4bf1-97b1-9e0e57abddf5"/>
+                  linkEnds="#c82d803f-3b3a-4480-a873-1d269dd8e005 #a4677426-567d-4bf1-97b1-9e0e57abddf5"/>
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                   id="6ee97ecd-4964-49d9-97d2-6f6d0d8d6ae0" name="24V/???A*???P" linkEnds="#c36bb320-4fd1-4c87-9a88-93e219d2f16e #e3c887f3-a9a0-49c1-b0e3-183bde43db34"/>
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
@@ -1620,26 +1627,16 @@
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                   id="ca11c98d-b9db-4fe7-a0fa-4024fd62aa39" name="Cat5E" linkEnds="#e5914197-32e5-4372-ae64-ccfbe6338b3e #1ae9d5ae-38e0-4487-9a50-dbd61287165f"/>
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-                  id="addb59a9-9f9c-4de7-ad43-88c2d2f7caa9" name="24V/???A*???P" linkEnds="#cc32e30c-28dd-443d-acd7-4d65ac3ecbe6 #dfaabaeb-68ef-4565-8568-e13e01728ab4"/>
-              <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-                  id="bbbfa012-0790-4d05-a0c0-10dae8d9601f" name="24V/???A*???P" linkEnds="#5308c926-60bc-45e1-9104-645682b7b9b1 #1ccb6ae8-9356-4e74-b463-1e6a5eb1e88f"/>
-              <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                   id="d0051c87-c867-4bb3-a5e6-6471c7c3cab6" name="24V/???A*???P" linkEnds="#95617801-d6df-41e4-96f5-785ab202982f #03d47791-3cb7-4c03-a9e5-dcc71dfbf3a1"/>
               <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                   id="d003cb52-866a-4cf1-9e61-7b2d43a39214" name="PL 15" linkEnds="#d60a623b-ab56-46e0-b4a0-ed0e35a4752e #302bb07c-7a07-45e5-ab81-827f047f2988"/>
-              <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-                  id="c1568635-c653-4b95-a5bd-20f3b7738b87" name="PL 16" linkEnds="#5f002cb3-e1d1-4bae-8489-a16cca0c2535 #c82d803f-3b3a-4480-a873-1d269dd8e005"/>
-              <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-                  id="e5d4bd8e-4cf0-4b48-9feb-9caf94718f8e" name="24V/10A*???P" linkEnds="#0ca64504-7468-4852-a2c9-610c15194c7a #b9671677-d924-4fe3-99c1-6a9d8a1fc9c4"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="36dc1b0c-7839-4062-a71f-42cd1aefc0aa" name="AC/DC [100~240VAC ->24VDC]"
+                  id="36dc1b0c-7839-4062-a71f-42cd1aefc0aa" name="AC/DC [100~240VAC ->24VDC] 400W"
                   nature="NODE">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="6aa0a25e-0e72-41ab-8a6a-42ad9b1c83b8" name="DC Out"/>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="87d5f7c0-09bd-4dab-b1d9-9941cdc704da" name="PP 1"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                    id="a4677426-567d-4bf1-97b1-9e0e57abddf5" name="AC Terminal"/>
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="b2618d88-7d9f-42d7-ba67-057438798bf7" name="IP66 [Power Motor+ACU] Out"
@@ -1659,19 +1656,25 @@
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                   id="c954c6a6-d38a-44ae-965d-673fb5584ba8" summary="TO DO? Ask Client"
-                  name="Safety Breakers??" nature="NODE">
+                  name="Fuse Socket" nature="NODE">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="ddc85b3a-2429-46ec-81c6-6803061291e0" name="PP 1"/>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="bd4dfda3-6477-434d-aafe-405d797ab8a6" name="PP 2"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="bf7ac763-0a82-4a4a-8d58-607608d7ff9d"
+                    name="Fuse" abstractType="#fd493fa2-0135-46ac-b0de-61944faeda3b"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                    id="a4677426-567d-4bf1-97b1-9e0e57abddf5" name="AC Terminal"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="fd493fa2-0135-46ac-b0de-61944faeda3b" name="Fuse" nature="NODE"/>
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="62d63b02-b1cf-4270-97e6-1a033bcb9fdb" name="ON/OFF LED???" nature="NODE">
+                  id="62d63b02-b1cf-4270-97e6-1a033bcb9fdb" name="ON/OFF LED" nature="NODE">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="c36bb320-4fd1-4c87-9a88-93e219d2f16e" name="PP 3"/>
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="be14c9d5-e3f6-447c-a31f-d2de9019cca3" name="Emergency Stop???"
+                  id="be14c9d5-e3f6-447c-a31f-d2de9019cca3" name="[ACU + ETH Hub]Emergency Stop"
                   nature="NODE">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="95617801-d6df-41e4-96f5-785ab202982f" name="PP 1"/>
@@ -1730,18 +1733,7 @@
                     id="81c6ccec-5e58-4afd-beab-ddbecffc8a32" name="N-type M_1"/>
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="6b3c5f25-c844-4db4-a35b-836b27248777" name="WirelessModule ON/OFF??"
-                  nature="NODE">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                    id="cc32e30c-28dd-443d-acd7-4d65ac3ecbe6" name="PP 1"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="58ba1516-7bb1-43a4-9701-07d82e3a3dab" name="ACU ON/OFF??" nature="NODE">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                    id="5308c926-60bc-45e1-9104-645682b7b9b1" name="PP 1"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="c4335195-ce70-45bc-96eb-bc9174292faf" name="DC Switch???" nature="NODE">
+                  id="c4335195-ce70-45bc-96eb-bc9174292faf" name="DC Switch" nature="NODE">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="bbc017b4-b2d9-4d5f-9a5f-ecb36c09194b" name="PP 2_1"/>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
@@ -1750,25 +1742,6 @@
                     id="03d47791-3cb7-4c03-a9e5-dcc71dfbf3a1" name="PP 7"/>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="e3c887f3-a9a0-49c1-b0e3-183bde43db34" name="PP 3"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="675bfaf1-deeb-4a96-acb0-6d71f4d15682" name="AC WirelessModule Switch??"
-                  nature="NODE">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                    id="04e60a36-fccf-4324-94d2-cd0d17cacf3d" name="PP 1"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                    id="5f002cb3-e1d1-4bae-8489-a16cca0c2535" name="PP 2"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                    id="dfaabaeb-68ef-4565-8568-e13e01728ab4" name="PP 5"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="273ff0df-8755-41c7-9819-c389f61197d8" name="ACU Switch??" nature="NODE">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                    id="ac8570e7-6989-4926-b508-4b83acfcccad" name="PP 1"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                    id="1ccb6ae8-9356-4e74-b463-1e6a5eb1e88f" name="PP 6"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                    id="b9671677-d924-4fe3-99c1-6a9d8a1fc9c4" name="PP 3"/>
               </ownedPhysicalComponents>
             </ownedPhysicalComponents>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
